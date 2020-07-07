@@ -126,5 +126,4 @@ If you use this repository, please use this to cite the paper :
 ## Authors
 
 * **Shilpa A V** - [Shilpa-av](https://github.com/Shilpa-av)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+* **Priyanshi Agrawal** - [PriyanshiAgrawal1](https://github.com/PriyanshiAgrawal1)
