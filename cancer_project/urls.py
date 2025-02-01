@@ -14,13 +14,14 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
 from cancer_app import views
-from django.conf.urls import include
+from django.views.generic import RedirectView
 
 urlpatterns = [
-    path('cancer_app/',include('cancer_app.urls')),
-    path('first/',views.index,name='index'),
+    path('', RedirectView.as_view(url='cancer_app/', permanent=True)),  # Redirect root to cancer_app
+    path('cancer_app/', include('cancer_app.urls')),
+    path('first/', views.index, name='index'),
     path('admin/', admin.site.urls),
-    path('test/',views.test,name='test'),
+    path('test/', views.test, name='test'),
 ]

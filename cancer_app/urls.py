@@ -1,8 +1,8 @@
-from django.conf.urls import url
 from django.urls import path
 from cancer_app import views
 
 urlpatterns = [
+    path('', views.login, name='login'),
     path('login/',views.login,name='login'),
     path('welcomeAdmin/',views.welcomeAdmin,name='welcomeAdmin'),
     path('welcomeLab/',views.welcomeLab,name='welcomeLab'),
